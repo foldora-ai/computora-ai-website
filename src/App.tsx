@@ -21,6 +21,7 @@ const products: Product[] = [
     detail: "Foldora analyzes supported files locally, then lets you preview proposed folders and names before anything changes.",
     url: "https://foldoraai.com",
     image: "/assets/foldora-hero.png",
+    icon: "/assets/foldora-icon.ico",
     accent: "blue",
     points: ["Local file analysis", "Preview before applying", "Organize and rename files"],
   },
@@ -60,7 +61,7 @@ function App() {
       <header className="nav-wrap">
         <nav className="nav container" aria-label="Main navigation">
           <a className="wordmark" href="#top" onClick={closeMenu} aria-label="Computora AI home">
-            <span className="wordmark-mark" aria-hidden="true"><span /></span>
+            <img className="brand-icon" src="/assets/computora-icon.png" alt="" />
             <span>Computora <em>AI</em></span>
           </a>
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" aria-expanded={menuOpen}>
@@ -132,7 +133,7 @@ function App() {
         <section className="final-cta"><div className="container final-inner"><p className="section-label">05 / START HERE</p><h2>Find the right tool<br /><i>for your digital workspace.</i></h2><a className="button button-light" href="#products">Explore our software <ArrowUpRight size={17} /></a><div className="final-products">{products.map((item) => <a href={item.url} target="_blank" rel="noreferrer" key={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="mini-mark">F</span>}<span>{item.name}</span><ArrowUpRight size={15} /></a>)}</div></div></section>
       </main>
 
-      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><span className="wordmark-mark" aria-hidden="true"><span /></span><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p><a href="https://foldoraai.com">Foldora AI</a><a href="https://cleanoraai.com">Cleanora AI</a><a href="https://galoriaai.com">Galoria AI</a></div><div><p>Company</p><a href="#about">About</a><a href="#support">Support</a><a href="#top">Contact</a></div></div></div><div className="container footer-bottom"><span>© 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></footer>
+      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><img className="brand-icon" src="/assets/computora-icon.png" alt="" /><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p><a href="https://foldoraai.com">Foldora AI</a><a href="https://cleanoraai.com">Cleanora AI</a><a href="https://galoriaai.com">Galoria AI</a></div><div><p>Company</p><a href="#about">About</a><a href="#support">Support</a><a href="#top">Contact</a></div></div></div><div className="container footer-bottom"><span>© 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></footer>
     </div>
   );
 }
