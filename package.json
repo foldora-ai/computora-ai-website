@@ -9,7 +9,7 @@
     "seo:check": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "deploy": "npm run build && tsx scripts/prepare-pages.ts",
+    "deploy": "npm run build && shx cp -r dist/* docs/",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
