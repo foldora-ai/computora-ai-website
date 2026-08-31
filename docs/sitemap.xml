@@ -5,4 +5,7 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://computoraai.com/ai-desktop-software/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://computoraai.com/software-product-family/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://computoraai.com/about/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
 </urlset>
