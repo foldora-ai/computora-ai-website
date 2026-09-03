@@ -12,3 +12,14 @@
 .product-showcase{border:1px solid rgba(17,17,15,.08);border-radius:14px;box-shadow:0 24px 60px rgba(32,32,28,.08)}
 .showcase-visual{border-left:1px solid rgba(17,17,15,.08)}.default-app-visual{border:1px solid rgba(255,255,255,.12)}
 .product-links{border-radius:0 0 10px 10px;overflow:hidden}
+.hero h1 span{background:linear-gradient(115deg,#f2f1eb 0%,#9d9d96 72%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero:after{opacity:.72;background:radial-gradient(circle,rgba(131,165,255,.16),transparent 64%);filter:blur(48px)}
+.hero-grid{opacity:.09;background-size:140px 140px}
+.ecosystem-orbit{filter:drop-shadow(0 28px 55px rgba(0,0,0,.18))}.orbit-core{background:linear-gradient(145deg,#242420,#151513);border-color:rgba(255,255,255,.3)}
+.orbit-product{box-shadow:0 12px 28px rgba(0,0,0,.2)}
+.section-heading h2,.intro h2,.principles h2,.final-cta h2{font-weight:650}
+.product-tabs button{position:relative}.product-tabs button.selected:after{content:"";position:absolute;left:0;right:14px;bottom:-1px;height:2px;background:var(--ink)}
+.product-showcase{transition:box-shadow .35s ease,transform .35s ease}.product-showcase:hover{box-shadow:0 30px 80px rgba(32,32,28,.14);transform:translateY(-2px)}
+.showcase-visual{background-image:linear-gradient(135deg,rgba(255,255,255,.18),transparent 45%),linear-gradient(45deg,rgba(17,17,15,.05) 25%,transparent 25%,transparent 75%,rgba(17,17,15,.05) 75%);background-size:auto,22px 22px}
+.final-cta{background:radial-gradient(circle at 78% 18%,rgba(111,139,225,.13),transparent 34%),#11110f}
+.footer{background:#0d0d0c}
