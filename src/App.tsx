@@ -58,6 +58,7 @@ const bundle = {
   referencePrice: "$44.97",
   savings: "$9.98",
   checkoutUrl: "https://computora.gumroad.com/l/computoraai",
+  paypalUrl: "https://www.paypal.com/ncp/payment/2Z26KQBUTMAC4",
 };
 
 function App() {
@@ -160,7 +161,10 @@ function App() {
                 <li><Check size={16} /> Cleanora AI lifetime license</li>
                 <li><Check size={16} /> Galoria AI lifetime license</li>
               </ul>
-              <a className="button button-light" href={bundle.checkoutUrl} target="_blank" rel="noreferrer">Get the complete bundle <ArrowUpRight size={17} /></a>
+              <div className="bundle-actions">
+                <a className="button button-light" href={bundle.checkoutUrl} target="_blank" rel="noreferrer">Buy bundle with card <ArrowUpRight size={17} /></a>
+                <a className="button button-paypal" href={bundle.paypalUrl} target="_blank" rel="noreferrer">Buy bundle with PayPal <ArrowUpRight size={17} /></a>
+              </div>
               <small>One payment. Three desktop apps. Lifetime access.</small>
             </aside>
           </div>
