@@ -110,18 +110,19 @@ function App() {
               <div className="orbit-ring ring-one" /><div className="orbit-ring ring-two" />
               <div className="orbit-core"><span>COMPUTORA</span><strong>AI</strong></div>
               {products.map((item, index) => (
-                <button
+                <a
                   key={item.name}
                   className={`orbit-product orbit-${index + 1} orbit-${item.accent} ${activeProduct === index ? "is-active" : ""}`}
-                  onClick={() => { setActiveProduct(index); document.getElementById("products")?.scrollIntoView({ behavior: "smooth" }); }}
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={`Explore ${item.name}`}
-                  aria-pressed={activeProduct === index}
                 >
                   <span className="orbit-icon-shell">
                     {item.icon ? <img src={item.icon} alt="" /> : <span className="mini-mark">F</span>}
                   </span>
                   <span className="orbit-product-name">{item.name.replace(" AI", "")}</span>
-                </button>
+                </a>
               ))}
             </div>
           </div>
