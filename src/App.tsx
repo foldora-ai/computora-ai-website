@@ -3,6 +3,7 @@ import { ArrowUpRight, Check, ChevronRight, Menu, X } from "lucide-react";
 
 type Product = {
   name: string;
+  seoLinkLabel: string;
   price: string;
   eyebrow: string;
   description: string;
@@ -17,6 +18,7 @@ type Product = {
 const products: Product[] = [
   {
     name: "Foldora AI",
+    seoLinkLabel: "Foldora AI file organizer",
     price: "$19.99",
     eyebrow: "Files, finally in order",
     description: "A focused desktop organizer for messy folders, downloads, and everyday work.",
@@ -29,6 +31,7 @@ const products: Product[] = [
   },
   {
     name: "Cleanora AI",
+    seoLinkLabel: "Cleanora Downloads folder organizer",
     price: "$9.99",
     eyebrow: "Clarity for cluttered folders",
     description: "An intelligent cleaner for Downloads, Desktop, Documents, and the digital spaces in between.",
@@ -41,6 +44,7 @@ const products: Product[] = [
   },
   {
     name: "Galoria AI",
+    seoLinkLabel: "Galoria AI photo organizer",
     price: "$14.99",
     eyebrow: "A calmer photo library",
     description: "A desktop photo organizer that brings structure to image collections without the busywork.",
@@ -133,7 +137,7 @@ function App() {
               <div className="showcase-copy"><p className="product-eyebrow">{product.eyebrow}</p><h3>{product.name}</h3><p className="showcase-description">{product.description}</p><p className="showcase-detail">{product.detail}</p><ul>{product.points.map((point) => <li key={point}><Check size={15} /> {point}</li>)}</ul><a className="button button-dark" href={product.url} target="_blank" rel="noreferrer">Explore {product.name.replace(" AI", "")} <ArrowUpRight size={17} /></a></div>
               <div className="showcase-visual"><div className="visual-glow" /><div className="window-chrome"><span /><span /><span /></div><div className="default-app-visual" aria-label={`${product.name} application preview`}><div className="default-app-top"><div className="default-app-brand">{product.icon ? <img src={product.icon} alt="" /> : <span className="mini-mark">F</span>}<strong>{product.name}</strong></div><span className="default-app-status">LOCAL WORKSPACE</span></div><div className="default-app-body"><div className="default-app-sidebar"><span className="active" /><span /><span /><span /></div><div className="default-app-content"><p className="default-app-title">{product.name.replace(" AI", "")} workspace</p><div className="default-app-lines"><i /><i /><i /></div><div className="default-app-panels"><span /><span /><span /></div><div className="default-app-footer"><b /> <small>Preview ready</small><em>Review changes</em></div></div></div></div></div>
             </div>
-            <div className="product-links">{products.map((item) => <a href={item.url} target="_blank" rel="noreferrer" key={item.name}><span>{item.name}</span><ArrowUpRight size={15} /></a>)}</div>
+            <div className="product-links">{products.map((item) => <a href={item.url} target="_blank" rel="noreferrer" key={item.name}><span>{item.seoLinkLabel}</span><ArrowUpRight size={15} /></a>)}</div>
           </div>
         </section>
 
@@ -179,7 +183,7 @@ function App() {
         <section className="final-cta"><div className="container final-inner"><p className="section-label">06 / START HERE</p><h2>Find the right tool<br /><i>for your digital workspace.</i></h2><a className="button button-light" href="#products">Explore our software <ArrowUpRight size={17} /></a><div className="final-products">{products.map((item) => <a href={item.url} target="_blank" rel="noreferrer" key={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="mini-mark">F</span>}<span>{item.name}</span><ArrowUpRight size={15} /></a>)}</div></div></section>
       </main>
 
-      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><img className="brand-icon" src="/assets/computora-icon.png" alt="" /><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p><a href="https://foldoraai.com">Foldora AI</a><a href="https://cleanoraai.com">Cleanora AI</a><a href="https://galoriaai.com">Galoria AI</a></div><div><p>Company</p><a href="#about">About</a><a href="#support">Support</a><a href="mailto:support@computoraai.com">support@computoraai.com</a></div></div></div><div className="container footer-bottom"><span>© 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></footer>
+      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><img className="brand-icon" src="/assets/computora-icon.png" alt="" /><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p>{products.map((item) => <a href={item.url} key={item.name}>{item.seoLinkLabel}</a>)}</div><div><p>Company</p><a href="#about">About</a><a href="#support">Support</a><a href="mailto:support@computoraai.com">support@computoraai.com</a></div></div></div><div className="container footer-bottom"><span>© 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></footer>
     </div>
   );
 }
