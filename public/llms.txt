@@ -1,0 +1,21 @@
+# Computora AI
+
+> Computora AI publishes focused desktop software for organizing files, cleaning Downloads folders, and organizing photo collections.
+
+## Official product family
+
+- [Foldora AI](https://foldoraai.com/): Local AI file organizer for Windows and macOS. It proposes folders and filenames for review before changes are applied.
+- [Cleanora AI](https://cleanoraai.com/): Metadata-based Downloads folder organizer for Windows with exact destination previews, audit history, and undo.
+- [Galoria AI](https://galoriaai.com/): Local photo organizer for Windows that previews proposed image categories and destinations.
+
+## Purchase options
+
+- [Computora AI Complete Bundle](https://computora.gumroad.com/l/computoraai): Foldora AI, Cleanora AI, and Galoria AI for USD 34.99 as a lifetime purchase.
+- [Bundle with PayPal](https://www.paypal.com/ncp/payment/2Z26KQBUTMAC4)
+
+## Publisher facts
+
+- Canonical website: https://computoraai.com/
+- Support: support@computoraai.com
+- Business model: One-time desktop software purchases; no recurring subscription is advertised.
+- Product websites are the authoritative sources for current platform, feature, privacy, and compatibility details.
