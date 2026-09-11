@@ -87,6 +87,7 @@ function App() {
             <a href="#products" onClick={closeMenu}>Products</a>
             <a href="#bundle" onClick={closeMenu}>Bundle</a>
             <a href="#about" onClick={closeMenu}>Company</a>
+            <a href="/ai-desktop-software/" onClick={closeMenu}>AI desktop software</a>
             <a href="#support" onClick={closeMenu}>Support</a>
             <a className="nav-cta" href="#products" onClick={closeMenu}>Explore our software <ArrowUpRight size={15} /></a>
           </div>
@@ -155,7 +156,7 @@ function App() {
             <div className="bundle-copy">
               <p className="section-label">03 / COMPLETE BUNDLE</p>
               <h2>Three focused tools.<br /><i>One lifetime purchase.</i></h2>
-              <p className="bundle-lede">Get Foldora, Cleanora, and Galoria together for one early bundle price—no subscription and no recurring fees.</p>
+              <p className="bundle-lede">Get Foldora, Cleanora, and Galoria together for one early bundle price - no subscription and no recurring fees.</p>
               <div className="bundle-products" aria-label="Products included in the bundle">
                 {products.map((item) => (
                   <div key={item.name}>
@@ -187,12 +188,12 @@ function App() {
           <div className="container principles-grid"><div><p className="section-label">04 / OUR APPROACH</p><h2>Useful AI, made quiet.</h2><p className="principles-lede">The best software earns its place by making the everyday feel lighter.</p></div><div className="principle-list"><article><span>01</span><div><h3>Built for real work</h3><p>Clear outcomes over feature lists. Every workflow starts with a problem worth solving.</p></div></article><article><span>02</span><div><h3>Simple by design</h3><p>Intelligence should make software easier to use, not give you another system to learn.</p></div></article><article><span>03</span><div><h3>Desktop-first</h3><p>Focused tools with the access and responsiveness that everyday files and photos deserve.</p></div></article><article><span>04</span><div><h3>Careful with your data</h3><p>Our products are designed around local workflows where the work can stay on your machine.</p></div></article></div></div>
         </section>
 
-        <section className="statement section"><div className="container statement-inner"><p className="section-label">05 / THE LONG VIEW</p><blockquote>“We build focused software for the parts of digital life that should simply work.”</blockquote><p className="statement-copy">Foldora, Cleanora, and Galoria are the beginning of a broader family of intelligent desktop tools—each small enough to feel personal, and considered enough to last.</p><a className="text-link dark-link" href="#products">Meet the product family <ChevronRight size={16} /></a></div></section>
+        <section className="statement section"><div className="container statement-inner"><p className="section-label">05 / THE LONG VIEW</p><blockquote>"We build focused software for the parts of digital life that should simply work."</blockquote><p className="statement-copy">Foldora, Cleanora, and Galoria are the beginning of a broader family of intelligent desktop tools - each small enough to feel personal, and considered enough to last.</p><a className="text-link dark-link" href="/software-product-family/">Meet the product family <ChevronRight size={16} /></a></div></section>
 
         <section className="final-cta"><div className="container final-inner"><p className="section-label">06 / START HERE</p><h2>Find the right tool<br /><i>for your digital workspace.</i></h2><a className="button button-light" href="#products">Explore our software <ArrowUpRight size={17} /></a><div className="final-products">{products.map((item) => <a href={item.url} target="_blank" rel="noreferrer" key={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="mini-mark">F</span>}<span>{item.name}</span><ArrowUpRight size={15} /></a>)}</div></div></section>
       </main>
 
-      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><img className="brand-icon" src="/assets/computora-icon.png" alt="" /><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p>{products.map((item) => <a href={item.url} key={item.name}>{item.seoLinkLabel}</a>)}</div><div><p>Company</p><a href="#about">About</a><a href="#support">Support</a><a href="mailto:support@computoraai.com">support@computoraai.com</a></div></div></div><div className="container footer-bottom"><span>© 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="#top">Privacy</a><a href="#top">Terms</a></div></div></footer>
+      <footer className="footer"><div className="container footer-top"><a className="wordmark" href="#top"><img className="brand-icon" src="/assets/computora-icon.png" alt="" /><span>Computora <em>AI</em></span></a><p>Intelligent desktop software<br />for a cleaner digital world.</p><div className="footer-nav"><div><p>Products</p>{products.map((item) => <a href={item.url} key={item.name}>{item.seoLinkLabel}</a>)}</div><div><p>Resources</p><a href="/ai-desktop-software/">AI desktop software</a><a href="/software-product-family/">Product family</a><a href="/about/">About Computora AI</a></div><div><p>Company</p><a href="#support">Support</a><a href="mailto:support@computoraai.com">support@computoraai.com</a></div></div></div><div className="container footer-bottom"><span>Copyright 2026 Computora AI</span><span>Focused tools. Less digital clutter.</span><div><a href="/about/">Privacy</a><a href="/about/">Terms</a></div></div></footer>
     </div>
   );
 }
