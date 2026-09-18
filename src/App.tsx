@@ -19,7 +19,7 @@ const products: Product[] = [
   {
     name: "Foldora AI",
     seoLinkLabel: "Foldora AI file organizer",
-    price: "$19.99",
+    price: "$14.99",
     eyebrow: "Files, finally in order",
     description: "A focused desktop organizer for messy folders, downloads, and everyday work.",
     detail: "Foldora analyzes supported files locally, then lets you preview proposed folders and names before anything changes.",
@@ -59,8 +59,8 @@ const products: Product[] = [
 
 const bundle = {
   price: "$34.99",
-  referencePrice: "$44.97",
-  savings: "$9.98",
+  referencePrice: "$39.97",
+  savings: "$4.98",
   checkoutUrl: "https://computora.gumroad.com/l/computoraai",
   paypalUrl: "https://www.paypal.com/ncp/payment/2Z26KQBUTMAC4",
 };
