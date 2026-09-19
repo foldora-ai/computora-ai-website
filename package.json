@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "seo:check": "vite build",
+    "build": "vite build && node scripts/audit-static-pages.mjs",
+    "seo:check": "npm run build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "deploy": "npm run build && shx cp -r dist/* docs/",
