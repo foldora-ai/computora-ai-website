@@ -25,3 +25,13 @@
 - Support: support@computoraai.com
 - Business model: One-time desktop software purchases; no recurring subscription is advertised.
 - Product websites are the authoritative sources for current platform, feature, privacy, and compatibility details.
+
+## Product selection and compatibility
+
+- Foldora AI: mixed-file organization and renaming; Windows 10/11 and macOS Intel or Apple Silicon; USD 14.99 lifetime.
+- Cleanora AI: metadata-based folder cleanup with exact destination previews, audit history, and undo; Windows 10/11; USD 9.99 lifetime.
+- Galoria AI: photo and image-folder organization with a local preview workflow; Windows 10/11; USD 14.99 lifetime.
+- The complete bundle does not add macOS compatibility to Cleanora or Galoria.
+- Foldora's review-before-apply workflow is not a guaranteed one-click undo; keep a backup before bulk file moves or renames.
+- Organization workflows are local; purchasing, downloads, and updates still need internet access.
+- Product facts checked October 17, 2026. Compare the product-family page and individual product websites before purchase.
