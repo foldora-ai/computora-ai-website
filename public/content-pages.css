@@ -1,0 +1,17 @@
+:root{color-scheme:light;--paper:#f4f3ee;--ink:#191a17;--muted:#666760;--line:#d7d7d0;--night:#11120f;--blue:#5579dc;--teal:#65c3b4;--violet:#9d83e8;--accent:linear-gradient(110deg,var(--blue),var(--teal),var(--violet))}
+*{box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth}
+html,body{width:100%;overflow-x:hidden}
+body{max-width:none!important;margin:0!important;padding:0!important;background:var(--paper);color:var(--ink);font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.72;-webkit-font-smoothing:antialiased}
+body>nav{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:28px;min-height:72px;margin:0;padding:0 max(24px,calc((100vw - 1160px)/2));background:var(--night);border-bottom:1px solid #34352f}
+body>nav a{color:#e7e7df;text-decoration:none;font-size:.9rem}body>nav a:first-child{display:inline-flex;align-items:center;gap:9px;margin-right:auto;color:white;font-weight:800;font-size:1.05rem}body>nav a:first-child:before{content:"";width:30px;height:30px;background:url('/assets/computora-icon.png') center/contain no-repeat}
+body>main{width:min(calc(100% - 48px),920px);min-width:0;margin:0 auto;padding:72px 0 112px}
+main>small{display:block;color:#646860;font:700 .76rem/1.4 "DM Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}
+h1{max-width:850px;margin:16px 0 22px;color:var(--ink);font-family:Manrope,Inter,system-ui,sans-serif;font-size:clamp(2.5rem,5vw,4.4rem);font-weight:600;line-height:1.08;letter-spacing:0}
+h2{margin:48px 0 14px;font-size:1.65rem;line-height:1.2;letter-spacing:0}h3{font-size:1.16rem;line-height:1.35}
+p,li{max-width:78ch;color:#454740;overflow-wrap:anywhere}a{color:#3858ad;text-underline-offset:3px}
+article{width:100%;min-width:0;margin:20px 0;padding:20px 22px;border:1px solid var(--line);border-radius:8px;background:#fffefa}
+table{min-width:650px;border-collapse:collapse;background:#fffefa}th,td{padding:14px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}thead th{background:#e9e9e1}caption{text-align:left;padding:12px;color:var(--muted)}
+main>div[style*="overflow"]{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+body>footer{padding:28px max(24px,calc((100vw - 1160px)/2));background:var(--night);color:#c4c5be}body>footer a{color:#e7e7df}body>footer p{color:#c4c5be}
+@media(max-width:650px){body>nav{min-height:62px;gap:8px 16px;padding:10px 16px;flex-wrap:wrap}body>nav a{font-size:.78rem}body>nav a:first-child{flex:1 0 100%;margin:0}body>main{width:calc(100vw - 36px)!important;max-width:920px;padding:48px 0 80px}body>main h1{width:100%;max-width:100%;font-size:2.5rem!important;overflow-wrap:anywhere}body>main p,body>main article{width:100%;max-width:100%;overflow-wrap:anywhere}body>footer{padding:24px 18px}}
